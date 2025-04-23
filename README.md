@@ -23,9 +23,9 @@ This project develops a robust neural network to predict the likelihood of loan 
 ## Installation
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/your-username/your-repo.git
-
+```
 2. Install dependencies:
   ```bash
     pip install -r requirements.txt
@@ -61,7 +61,7 @@ Features: Loan amounts, durations, country IDs, loan types, and more.
 Target: Binary (0: No default, 1: Default).
 
 ## How It Works
-Data Preprocessing:
+## Data Preprocessing:
 - Log transformations for skewed features.
 - Standard scaling and one-hot encoding for categorical variables.
 - Feature engineering (e.g., loan duration in days, date-based features).
