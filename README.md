@@ -2,9 +2,18 @@
 
 A deep learning model to predict loan default probabilities for the African Credit Scoring Challenge.
 
+## Motivation
+This project was developed as part of a competitive challenge to address real-world financial risk assessment in African markets. It showcases my skills in deep learning, data preprocessing, and feature engineering while tackling a socially impactful problem. 
+
 ## Description
 
 This project develops a robust neural network to predict the likelihood of loan defaults using financial data from the [African Credit Scoring Challenge](https://zindi.africa/competitions/african-credit-scoring-challenge). Built with TensorFlow, the model processes diverse features (e.g., loan amounts, durations, and borrower demographics) to provide accurate risk assessments for financial institutions in Africa's dynamic markets. Key techniques include feature engineering, SMOTE for class imbalance, and L2 regularization for robust generalization.
+
+
+## 🏆 Competition Results
+- F1 Score (validation): 0.812
+- Private Leaderboard: 0.6585
+- Ranked: 335 out of 899 teams (Top 37%)
 
 ## Features
 
@@ -39,8 +48,6 @@ python predicting_loan_defaults_with_deep_learning.py
 Outputs:
 submission.csv: Test set predictions.
 
-Visualizations: Data distributions, correlation heatmaps, and confusion matrix.
-
 ## Model Architecture
 - Layers: 4 dense layers (256, 128, 64, 32 neurons) with ReLU activation.
 - Regularization: L2 regularization and dropout (0.5, 0.4, 0.3).
@@ -54,28 +61,37 @@ Visualizations: Data distributions, correlation heatmaps, and confusion matrix.
 Key Insight: Effective handling of class imbalance and feature skewness improved model robustness.
 
 ## Dataset
-Source: African Credit Scoring Challenge
-
-Features: Loan amounts, durations, country IDs, loan types, and more.
-
-Target: Binary (0: No default, 1: Default).
+- Source: African Credit Scoring Challenge
+- Features: Loan amounts, durations, country IDs, loan types, and more.
+- Target: Binary (0: No default, 1: Default).
 
 ## How It Works
+## Exploratory Data Analysis (EDA)
+- Inspected missing values, duplicates, and class distribution.
+- Visualized data using histograms, boxplots, and heatmaps.
+- Analyzed correlations to understand feature relationships with the target.
+
 ## Data Preprocessing:
 - Log transformations for skewed features.
+- Capped outliers at the 95th percentile to reduce extreme influence.
 - Standard scaling and one-hot encoding for categorical variables.
 - Feature engineering (e.g., loan duration in days, date-based features).
 
 ## Model Training:
-- SMOTE to balance the minority class (defaults).
+- Stratified train-validation split to preserve class distribution.
+- Applied SMOTE only to the training set to balance the minority class (defaults).
+- Used early stopping and learning rate reduction callbacks for better convergence.
 - Neural network trained with binary cross-entropy loss.
 
 ## Evaluation:
-- Threshold tuning to optimize F1 Score.
-- Visualizations for model performance and data insights.
+- Main metric: F1 Score (chosen due to class imbalance).
+- Also reported: ROC AUC, Confusion Matrix, and Classification Report.
 
-## Motivation
-This project was developed as part of a competitive challenge to address real-world financial risk assessment in African markets. It showcases my skills in deep learning, data preprocessing, and feature engineering while tackling a socially impactful problem.
+## Key Visualizations
+- Distribution plots of raw and transformed features.
+- Correlation heatmaps.
+- Boxplots to detect outliers.
+- Confusion matrix and loss curves during training.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for suggestions.
