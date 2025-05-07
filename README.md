@@ -4,7 +4,6 @@ A deep learning model to predict loan default probabilities for the African Cred
 
 <div align="center">
    <img src="results and visualizations/competition_ranking.jpeg" width=700>
-   <img src="results and visualizations/loss_function.png" width=700>
 </div>
 
 ## Motivation
