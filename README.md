@@ -2,6 +2,10 @@
 
 A deep learning model to predict loan default probabilities for the African Credit Scoring Challenge.
 
+<div align="center">
+   <img src="results and visualizations/loss_function.png">
+</div>
+
 ## Motivation
 This project was developed as part of a competitive challenge to address real-world financial risk assessment in African markets. It showcases my skills in deep learning, data preprocessing, and feature engineering while tackling a socially impactful problem. 
 
