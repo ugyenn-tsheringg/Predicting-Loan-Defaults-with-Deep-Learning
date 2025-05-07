@@ -3,7 +3,7 @@
 A deep learning model to predict loan default probabilities for the African Credit Scoring Challenge.
 
 <div align="center">
-   <img src="results and visualizations/competition_ranking.jpeg" width=700>
+   <img src="results and visualizations/competition_ranking.jpeg">
 </div>
 
 ## Motivation
@@ -35,6 +35,10 @@ This project develops a robust neural network to predict the likelihood of loan 
 - Inspected missing values, duplicates, and class distribution.
 - Visualized data using histograms, boxplots, and heatmaps.
 - Analyzed correlations to understand feature relationships with the target.
+
+<div align="center">
+   <img src="results and visualizations/eda_combined.png" width=700>
+</div>
 
 ## Data Preprocessing:
 - Log transformations for skewed features.
@@ -73,6 +77,9 @@ Key Insight: Effective handling of class imbalance and feature skewness improved
 - Private Leaderboard: 0.6585
 - Ranked: 335 out of 899 teams (Top 37%)
 
+<div align="center">
+   <img src="results and visualizations/submissions.jpeg" width=700>
+</div>
 
 ## Technologies Used
 
