@@ -104,8 +104,6 @@ Run the main script to train the model and generate predictions:
 ```bash
 python predicting_loan_defaults_with_deep_learning.py
 ```
-Outputs:
-submission.csv: Test set predictions.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for suggestions.
