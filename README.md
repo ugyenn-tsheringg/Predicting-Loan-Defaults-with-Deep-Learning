@@ -55,8 +55,8 @@ submission.csv: Test set predictions.
 - Callbacks: Early stopping and learning rate reduction on plateau.
 
 ## Performance
-- F1 Score: ~0.XX (optimized with threshold tuning).
-- ROC AUC: ~0.XX, indicating strong discriminative ability.
+- F1 Score: 0.7168 (optimized with threshold tuning).
+- ROC AUC: 0.9855, indicating strong discriminative ability.
 
 Key Insight: Effective handling of class imbalance and feature skewness improved model robustness.
 
