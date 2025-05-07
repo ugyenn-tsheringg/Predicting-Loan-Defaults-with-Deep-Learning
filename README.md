@@ -13,45 +13,6 @@ This project was developed as part of a competitive challenge to address real-wo
 
 This project develops a robust neural network to predict the likelihood of loan defaults using financial data from the [African Credit Scoring Challenge](https://zindi.africa/competitions/african-credit-scoring-challenge). Built with TensorFlow, the model processes diverse features (e.g., loan amounts, durations, and borrower demographics) to provide accurate risk assessments for financial institutions in Africa's dynamic markets. Key techniques include feature engineering, SMOTE for class imbalance, and L2 regularization for robust generalization.
 
-
-## 🏆 Competition Results
-- F1 Score (validation): 0.812
-- Private Leaderboard: 0.6585
-- Ranked: 335 out of 899 teams (Top 37%)
-
-## Features
-
-- Predicts loan default probabilities using a deep neural network.
-- Handles imbalanced data with SMOTE oversampling.
-- Incorporates feature engineering (e.g., date-based features, log transformations).
-- Visualizes data distributions, correlations, and model performance (e.g., ROC AUC, F1 Score).
-
-## Technologies Used
-
-- **Python**: Pandas, NumPy, Scikit-learn, TensorFlow
-- **Visualization**: Matplotlib, Seaborn
-- **Data**: African Credit Scoring Challenge dataset
-- **Environment**: Google Colab, Kaggle
-
-## Installation
-
-1. Clone the repository:
-```bash
-   git clone https://github.com/your-username/your-repo.git
-```
-2. Install dependencies:
-  ```bash
-    pip install -r requirements.txt
-  ```
-
-## Usage
-Run the main script to train the model and generate predictions:
-```bash
-python predicting_loan_defaults_with_deep_learning.py
-```
-Outputs:
-submission.csv: Test set predictions.
-
 ## Model Architecture
 - Layers: 4 dense layers (256, 128, 64, 32 neurons) with ReLU activation.
 - Regularization: L2 regularization and dropout (0.5, 0.4, 0.3).
@@ -68,6 +29,13 @@ Key Insight: Effective handling of class imbalance and feature skewness improved
 - Source: African Credit Scoring Challenge
 - Features: Loan amounts, durations, country IDs, loan types, and more.
 - Target: Binary (0: No default, 1: Default).
+
+## Features
+
+- Predicts loan default probabilities using a deep neural network.
+- Handles imbalanced data with SMOTE oversampling.
+- Incorporates feature engineering (e.g., date-based features, log transformations).
+- Visualizes data distributions, correlations, and model performance (e.g., ROC AUC, F1 Score).
 
 ## How It Works
 ## Exploratory Data Analysis (EDA)
@@ -96,6 +64,38 @@ Key Insight: Effective handling of class imbalance and feature skewness improved
 - Correlation heatmaps.
 - Boxplots to detect outliers.
 - Confusion matrix and loss curves during training.
+
+## 🏆 Competition Results
+- F1 Score (validation): 0.812
+- Private Leaderboard: 0.6585
+- Ranked: 335 out of 899 teams (Top 37%)
+
+
+## Technologies Used
+
+- **Python**: Pandas, NumPy, Scikit-learn, TensorFlow
+- **Visualization**: Matplotlib, Seaborn
+- **Data**: African Credit Scoring Challenge dataset
+- **Environment**: Google Colab, Kaggle
+
+## Installation
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/your-username/your-repo.git
+```
+2. Install dependencies:
+  ```bash
+    pip install -r requirements.txt
+  ```
+
+## Usage
+Run the main script to train the model and generate predictions:
+```bash
+python predicting_loan_defaults_with_deep_learning.py
+```
+Outputs:
+submission.csv: Test set predictions.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for suggestions.
