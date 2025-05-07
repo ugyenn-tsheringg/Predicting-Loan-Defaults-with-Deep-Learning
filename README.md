@@ -3,6 +3,7 @@
 A deep learning model to predict loan default probabilities for the African Credit Scoring Challenge.
 
 <div align="center">
+   <img src="results and visualizations/competition_ranking.jpeg" width=700>
    <img src="results and visualizations/loss_function.png" width=700>
 </div>
 
@@ -13,25 +14,18 @@ This project was developed as part of a competitive challenge to address real-wo
 
 This project develops a robust neural network to predict the likelihood of loan defaults using financial data from the [African Credit Scoring Challenge](https://zindi.africa/competitions/african-credit-scoring-challenge). Built with TensorFlow, the model processes diverse features (e.g., loan amounts, durations, and borrower demographics) to provide accurate risk assessments for financial institutions in Africa's dynamic markets. Key techniques include feature engineering, SMOTE for class imbalance, and L2 regularization for robust generalization.
 
+## Dataset
+- Source: African Credit Scoring Challenge
+- Features: Loan amounts, durations, country IDs, loan types, and more.
+- Target: Binary (0: No default, 1: Default).
+
 ## Model Architecture
 - Layers: 4 dense layers (256, 128, 64, 32 neurons) with ReLU activation.
 - Regularization: L2 regularization and dropout (0.5, 0.4, 0.3).
 - Optimization: Adam optimizer (learning rate: 0.0003).
 - Callbacks: Early stopping and learning rate reduction on plateau.
 
-## Performance
-- F1 Score: 0.7168 (optimized with threshold tuning).
-- ROC AUC: 0.9855, indicating strong discriminative ability.
-
-Key Insight: Effective handling of class imbalance and feature skewness improved model robustness.
-
-## Dataset
-- Source: African Credit Scoring Challenge
-- Features: Loan amounts, durations, country IDs, loan types, and more.
-- Target: Binary (0: No default, 1: Default).
-
 ## Features
-
 - Predicts loan default probabilities using a deep neural network.
 - Handles imbalanced data with SMOTE oversampling.
 - Incorporates feature engineering (e.g., date-based features, log transformations).
@@ -64,6 +58,16 @@ Key Insight: Effective handling of class imbalance and feature skewness improved
 - Correlation heatmaps.
 - Boxplots to detect outliers.
 - Confusion matrix and loss curves during training.
+
+## Performance
+- F1 Score: 0.7168 (optimized with threshold tuning).
+- ROC AUC: 0.9855, indicating strong discriminative ability.
+
+Key Insight: Effective handling of class imbalance and feature skewness improved model robustness.
+
+<div align="center">
+   <img src="results and visualizations/loss_function.png" width=700>
+</div>
 
 ## 🏆 Competition Results
 - F1 Score (validation): 0.812
