@@ -3,7 +3,7 @@
 A deep learning model to predict loan default probabilities for the African Credit Scoring Challenge.
 
 <div align="center">
-   <img src="results and visualizations/loss_function.png">
+   <img src="results and visualizations/loss_function.png" width=700>
 </div>
 
 ## Motivation
